@@ -5,6 +5,107 @@ body{
     overflow-x: hidden;
 }
 
+/* Loader */
+loader {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  
+}
+  #loader {
+    width: 48px;
+    height: 48px;
+    margin: auto;
+    position: relative;
+  }
+  
+  #loader:before {
+    content: '';
+    width: 48px;
+    height: 5px;
+    background: #f0808050;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    border-radius: 50%;
+    animation: shadow324 0.5s linear infinite;
+  }
+  
+  #loader:after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: #f08080;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 4px;
+    animation: jump7456 0.5s linear infinite;
+  }
+  
+  @keyframes jump7456 {
+    15% {
+      border-bottom-right-radius: 3px;
+    }
+  
+    25% {
+      transform: translateY(9px) rotate(22.5deg);
+    }
+  
+    50% {
+      transform: translateY(18px) scale(1, .9) rotate(45deg);
+      border-bottom-right-radius: 40px;
+    }
+  
+    75% {
+      transform: translateY(9px) rotate(67.5deg);
+    }
+  
+    100% {
+      transform: translateY(0) rotate(90deg);
+    }
+  }
+  
+  @keyframes shadow324 {
+  
+    0%,
+      100% {
+      transform: scale(1, 1);
+    }
+  
+    50% {
+      transform: scale(1.2, 1);
+    }
+  }
+ 
+ #loader {
+  position: absolute;
+  top: calc(50% - 1.25em);
+  left: calc(50% - 1.25em);
+ }
+
+ /* End of loader */
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+
+/* End of animation */
 
 /* Navbar */
 .navbar{
@@ -40,7 +141,7 @@ top: 33px;
 .navbar li{
     list-style: none;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 9px;
     position: relative;
     
 }
@@ -85,16 +186,13 @@ top: 33px;
 }
 
 
+/* End of navbar */
+
 
 
 
 
 /* Home page */
-  #myDiv {
-    display: none;
-    text-align: center;
-  }
-
 
 #homepic img{
 position: absolute;
@@ -110,7 +208,7 @@ position: absolute;
 width: 994px;
 height: 427px;
 left: 630px;
-top: 244px;
+top: 200px;
 
 font-family: 'Hanuman';
 font-style: normal;
@@ -122,3 +220,96 @@ text-shadow: 0px 4px 4px pink;
 text-transform: capitalize;
 
 }
+
+/* End of home page */
+
+/* Button */
+
+.button {
+  display: inline-block;
+  border-radius: 15px;
+  background-color: #DBA39A;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-family:'Hanuman' ;
+  font-size: 25px;
+  padding: 20px;
+  width: 250px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-left: 445px;
+  margin-top: 420px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+/* End of button */
+
+/* Our menu */
+.menu h1{ 
+text-align: center;
+width: 994px;
+height: 427px;
+margin-top: 200px;
+margin-bottom: 0px;
+
+font-family: 'Hanuman';
+font-style: normal;
+font-weight: 700;
+font-size: 50px;
+line-height: 100px;
+color: #DBA39A;
+text-shadow: 0px 4px 4px pink;
+text-transform: capitalize;
+
+}
+
+
+.mySlides {
+  display: none;
+  margin-top: -250px;
+  margin-left: 80px;
+  height: 500px;
+  width: 500px;
+  border-radius: 10%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+ 
+}
+
+.menu p{
+  text-align: center;
+  position: absolute;
+  top: 900px;
+  margin-left: 80px;
+  margin-right: 250px;
+  font-style: 'Hanuman';
+  color: #bd837a;
+  
+}
+
+/* End of our menu */
