@@ -1,77 +1,86 @@
 /* Landing page */
 
-body{
-    background: #FEFCF3;
-    overflow-x: hidden;
+body {
+  background: #FEFCF3;
+  overflow-x: hidden;
 }
 
 
 /* Navbar */
-.navbar{
-    height: 100px;
-    
+.navbar {
+  height: 100px;
+
 }
 
-.navbar-brand{
+.navbar-brand {
 
-font-family: 'Kaisei Opti';
-margin-left: 182px;
-font-style: normal;
-font-weight: 549;
-font-size: 30px;
-line-height: 47px;
-color: #DBA39A;
-text-transform: capitalize;
-}
-
-.navbar img{
-position: absolute;
-width: 35px;
-height: 30px;
-left: 386px;
-top: 33px;
-}
-
-.navbar ul{
-    margin-left: 500px;
-    margin-top: 33px;
-}
-
-.navbar li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
-    position: relative;
-    
-}
-
-.nav-item a{
+  font-family: 'Kaisei Opti';
+  margin-left: 182px;
+  font-style: normal;
+  font-weight: 549;
+  font-size: 30px;
+  line-height: 47px;
   color: #DBA39A;
-  display:inline-block;
+  text-transform: capitalize;
+}
+
+.navbar img {
+  position: absolute;
+  width: 35px;
+  height: 30px;
+  left: 386px;
+  top: 33px;
+}
+
+.navbar ul {
+  margin-left: 500px;
+  margin-top: 33px;
+}
+
+.navbar li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 10px;
+  position: relative;
+
+}
+
+.nav-item a {
+  color: #DBA39A;
+  display: inline-block;
   text-decoration: none;
   font-family: 'Hanuman';
   font-style: normal;
 
 }
 
-.navbar a::after{
-  display:block;
+.navbar a::after {
+  display: block;
   content: '';
-  border-bottom: solid 3px #DBA39A; 
-  transform: scaleX(0);  
+  border-bottom: solid 3px #DBA39A;
+  transform: scaleX(0);
   transition: transform 250ms ease-in-out;
-  
-}
-.dropdown a:hover::after {border: none;}
-.dropdown a::after{border: none;}
-.dropdown:hover .dropdown-menu {display: block;}
 
-.navbar a:hover:after { 
-  transform: scaleX(1); 
-  
 }
 
-.navbar-nav > li > a:hover {
+.dropdown a:hover::after {
+  border: none;
+}
+
+.dropdown a::after {
+  border: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.navbar a:hover:after {
+  transform: scaleX(1);
+
+}
+
+.navbar-nav>li>a:hover {
   color: #DBA39A;
 }
 
@@ -85,91 +94,96 @@ top: 33px;
 }
 
 
-
-
+h1 {
+  text-align: center;
+  font-family: 'Hanuman';
+  font-size: 50px;
+  line-height: 100px;
+  color: #DBA39A;
+  text-shadow: 0px 4px 4px pink;
+  text-transform: capitalize;
+}
 
 
 /* Home page */
-  #myDiv {
-    display: none;
-    text-align: center;
-  }
+#myDiv {
+  display: none;
+  text-align: center;
+}
 
 
-#homepic img{
-position: absolute;
-width: 700px;
-height: 700px;
-left: -40px;
-top: 30px
+#homepic img {
+  position:fixed;
+  width: 700px;
+  height: 700px;
+  left: -40px;
+  top: 30px
+}
+
+#homepic h1 {
+  position: absolute;
+  width: 994px;
+  height: 427px;
+  left: 630px;
+  top: 244px;
+
+  font-family: 'Hanuman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 100px;
+  color: #DBA39A;
+  text-shadow: 0px 4px 4px pink;
+  text-transform: capitalize;
 
 }
 
-#homepic h1{
-position: absolute;
-width: 994px;
-height: 427px;
-left: 630px;
-top: 244px;
-
-font-family: 'Hanuman';
-font-style: normal;
-font-weight: 700;
-font-size: 70px;
-line-height: 100px;
-color: #DBA39A;
-text-shadow: 0px 4px 4px pink;
-text-transform: capitalize;
-
+#c-container {
+  max-width: 2000px;
+  margin-top: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background: rgba(61, 21, 95, 0.5);
 }
 
-#c-container{
-max-width: 2000px;
-margin-top:auto;
-padding-top: 50px;
-padding-bottom: 50px;
-background:rgba(61, 21, 95, 0.5);
+#contact h1 {
+  text-align: center;
+  font-family: 'Hanuman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 100px;
+  color: #8f2525;
+  text-shadow: 0px 4px 4px pink;
+  text-transform: capitalize;
 }
 
-#contact h1{
-text-align:center;
-font-family: 'Hanuman';
-font-style: normal;
-font-weight: 700;
-font-size: 50px;
-line-height: 100px;
-color: #8f2525;
-text-shadow: 0px 4px 4px pink;
-text-transform: capitalize;
+#contact img {
+  max-width: 35px;
 }
 
-#contact img{
-  max-width:35px;
+#contact p {
+  text-align: center;
+  font-family: 'Hanuman';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
 }
 
-#contact p{
-text-align:center;
-font-family: 'Hanuman';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 30px;
-}
-
-#contact h2{
-text-align:center;
-font-family: 'Hanuman';
-font-style: normal;
-font-weight: 700;
-font-size: 25px;
-line-height: 50px;
-color: #8f2525;
-text-shadow: 0px 4px 4px pink;
-text-transform: capitalize;
+#contact h2 {
+  text-align: center;
+  font-family: 'Hanuman';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 50px;
+  color: #8f2525;
+  text-shadow: 0px 4px 4px pink;
 }
 
 #c-column {
-  text-align:center;
+  text-align: center;
   width: 50%;
   padding-left: 50px;
 }
@@ -178,8 +192,8 @@ text-transform: capitalize;
   border-right: 3px solid #8f2525;
 }
 
-.row{
-  max-width:1500px;
+.row {
+  max-width: 1500px;
   margin: auto;
 }
 
@@ -190,7 +204,7 @@ text-transform: capitalize;
 
 }
 
-form{
+form {
   font-family: 'Hanuman';
   font-size: 17px;
 }
@@ -220,8 +234,8 @@ textarea {
 
 button {
   padding: 9px 25px;
-  color:#DBA39A;
-  background-color:#8f2525;
+  color: #DBA39A;
+  background-color: #8f2525;
   border: none;
   border-radius: 50px;
   cursor: pointer;
@@ -231,4 +245,50 @@ button {
 button:hover {
   color: black;
   background-color: rgba(43, 43, 43, 1.00);
+}
+
+#about {
+  max-width: 1000px;
+  margin: auto;
+  overflow: auto;
+  text-align: center;
+}
+
+#about img {
+  max-width: 900px;
+}
+
+#about p {
+  margin-top: 50px;
+  padding-left: 100px;
+  max-width: 900px;
+  text-align: center;
+  font-family: 'Hanuman';
+  font-size: 20px;
+  color: black;
+}
+
+.site-footer {
+  padding: 30px 0;
+}
+
+.site-footer hr {
+  border-top-color: #000000;
+  opacity: 0.5;
+}
+
+.site-footer .container {
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.site-footer h4 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-family: 'Hanuman';
+}
+
+.site-footer p {
+  margin-bottom: 10px;
+  font-family: 'Hanuman';
 }
