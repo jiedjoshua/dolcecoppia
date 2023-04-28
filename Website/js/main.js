@@ -1,10 +1,6 @@
 /*  ---------------------------------------------------
-    Theme Name: Cake
-    Description: Cake e-commerce tamplate
-    Author: Colorib
-    Author URI: https://www.colorib.com/
+    Description: Cake e-commerce
     Version: 1.0
-    Created: Colorib
 ---------------------------------------------------------  */
 
 'use strict';
