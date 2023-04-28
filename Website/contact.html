@@ -35,7 +35,7 @@
     <div class="collapse navbar-collapse" id="navbarNavDropdown">
       <ul class="navbar-nav">
         <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
 
@@ -43,8 +43,6 @@
             aria-haspopup="true" aria-expanded="false">
             Products <b class=" dropdown-toggle"></b>
           </a>
-
-
           <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
             <a class="dropdown-item" href="#">Cakes</a>
             <a class="dropdown-item" href="#">Cupcakes</a>
@@ -68,15 +66,75 @@
     </div>
   </nav>
 
-  <div class="container">
-    <div id="homepic">
-      <img src="homecake.png" alt="homepic">
-      <h1>Experience a slice <br>
-        of heaven <br>
-        with every bite</h1>
+  <div id="c-container">
+    <div id="contact">
+      <h1>CONTACT US FOR ANY INQUIRIES</h1>
+      <div class="row">
+        <div id="c-column">
+          <h2>For online order inquiries,
+            <br>please contact
+          </h2>
+          <img src="img/phone.png" alt="phone logo">
+          <p>+63 912 3456 789</p>
+          <p>+63 912 3456 789</p>
+          <br>
+          <img src="img/email.png" alt="email logo">
+          <p>info@dolcecoppia.com</p>
+          <br>
+          <img src="img/location.webp" alt="email logo">
+          <p>333 Sen. Gil Puyat St. Avenue,<br>
+            Makati City 1200 Philippines</p>
+        </div>
+        <div id="c-column">
+          <h2>If you have any questions, inquiries, or
+            <br>comments, feel free to leave us a message
+          </h2>
+          <form method="post" action="mailto: sembornas@gmail.com" autocomplete="on">
+            <div id="input-row">
+              <div id="input-in">
+                <label>Name: </label>
+                <input type="Text" placeholder="Name">
+              </div>
+              <div id="input-in">
+                <label>Number: </label>
+                <input type="Text" placeholder="+63 912 345 6789">
+              </div>
+            </div>
+            <div id="input-row">
+              <div id="input-in">
+                <label>Email: </label>
+                <input type="email" placeholder="Email">
+              </div>
+              <div id="input-in">
+                <label>Location: </label>
+                <input type="text" placeholder="Quezon City">
+              </div>
+            </div>
+            <textarea rows="5" placeholder="Write your messages or questions here."></textarea>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-
+  <br>
+  <br>
+  <footer class="site-footer">
+    <hr>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h4>About Us</h4>
+          <p>We are a cake shop that offers a wide range of delicious cakes to satisfy your sweet cravings.</p>
+        </div>
+        <div class="col-md-6">
+          <h4>Contact Us</h4>
+          <p>123 Main Street<br>City, State Zip<br>Phone: (+63) 912-3456-789<br>Email: info@dolcecoppia.com</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 
 </html>
